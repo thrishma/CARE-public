@@ -1,0 +1,36 @@
+{
+  "name": "care",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "create-logos": "node scripts/create-vendor-logos.js && node scripts/create-new-vendor-logos.js",
+    "update-vendors": "npm run create-logos && npm run typecheck"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.50.3",
+    "framer-motion": "^11.0.24",
+    "mermaid": "^10.9.1",
+    "next": "^14.2.30",
+    "openai": "^4.52.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "typescript": "^5"
+  }
+}

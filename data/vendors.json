@@ -1,0 +1,890 @@
+[
+  {
+    "id": "commercetools",
+    "name": "commercetools",
+    "category": "commerce_engine",
+    "description": "API-first, headless commerce platform built for enterprise scale",
+    "machCompliant": true,
+    "offerings": ["Commerce API", "Product Management", "Cart & Checkout", "Order Management"],
+    "pros": ["Full API coverage", "Microservices architecture", "Scalable", "Extensive documentation"],
+    "cons": ["Complex setup", "Higher cost", "Steep learning curve"],
+    "integrationNotes": "Excellent API-first approach, integrates well with all MACH components",
+    "logoUrl": "/logos/commercetools.svg",
+    "website": "https://commercetools.com",
+    "pricing": [
+      {
+        "name": "SMB",
+        "description": "For growing businesses up to $10M revenue",
+        "monthlyPrice": 2000,
+        "annualPrice": 20000,
+        "setup": 5000,
+        "features": ["Commerce APIs", "Basic support", "Up to 100k API calls/month"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 15,
+            "description": "15% off first year",
+            "conditions": ["New customers only", "Annual payment"],
+            "minCommitment": "12 months"
+          },
+          {
+            "type": "free_months",
+            "value": 2,
+            "description": "2 months free with annual plan",
+            "conditions": ["Annual payment"],
+            "minCommitment": "12 months"
+          }
+        ],
+        "limits": {
+          "orders": 10000,
+          "users": 50
+        }
+      },
+      {
+        "name": "Enterprise",
+        "description": "For large businesses over $10M revenue",
+        "monthlyPrice": 5000,
+        "annualPrice": 50000,
+        "setup": 15000,
+        "features": ["Full Commerce Suite", "Premium support", "Unlimited API calls", "Custom integrations"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 20,
+            "description": "20% off first year",
+            "conditions": ["New customers only", "24-month commitment"],
+            "minCommitment": "24 months"
+          },
+          {
+            "type": "fixed",
+            "value": 10000,
+            "description": "$10,000 off setup fees",
+            "conditions": ["Annual payment", "Minimum 24-month commitment"]
+          }
+        ],
+        "limits": {
+          "orders": -1,
+          "users": -1
+        }
+      }
+    ],
+    "pricingModel": "fixed",
+    "pricingNotes": "Pricing scales with usage and API calls. Custom enterprise pricing available."
+  },
+  {
+    "id": "shopify-plus",
+    "name": "Shopify Plus",
+    "category": "commerce_engine",
+    "description": "Enterprise-level headless commerce platform for omnichannel and DTC strategies",
+    "machCompliant": true,
+    "offerings": ["Headless Commerce", "Multi-channel Selling", "Enterprise APIs", "Custom Apps"],
+    "pros": ["Easy to use", "Strong ecosystem", "Omnichannel capabilities", "Scalable"],
+    "cons": ["Transaction fees", "Limited customization", "Shopify-centric"],
+    "integrationNotes": "Strong API ecosystem, good for rapid deployment and omnichannel",
+    "logoUrl": "/logos/shopify-plus.svg",
+    "website": "https://www.shopify.com/plus",
+    "pricing": [
+      {
+        "name": "Shopify Plus",
+        "description": "Enterprise commerce platform",
+        "monthlyPrice": 2000,
+        "annualPrice": 20000,
+        "setup": 0,
+        "transactionFee": 0.15,
+        "features": ["Headless APIs", "Launchpad", "Flow automation", "Script Editor"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 10,
+            "description": "10% off for annual payment",
+            "conditions": ["Annual payment upfront"],
+            "minCommitment": "12 months"
+          },
+          {
+            "type": "percentage",
+            "value": 25,
+            "description": "25% off transaction fees for first 6 months",
+            "conditions": ["New Plus customers"],
+            "expiresAt": "2024-12-31"
+          }
+        ],
+        "limits": {
+          "orders": -1,
+          "users": -1
+        }
+      }
+    ],
+    "pricingModel": "hybrid",
+    "pricingNotes": "Starts at $2000/month + 0.15% transaction fees. No setup fees."
+  },
+  {
+    "id": "bigcommerce",
+    "name": "BigCommerce",
+    "category": "commerce_engine",
+    "description": "Open SaaS headless commerce platform with API-first architecture",
+    "machCompliant": true,
+    "offerings": ["Headless API", "Multi-storefront", "Open SaaS", "Enterprise Features"],
+    "pros": ["No transaction fees", "Built-in features", "Open API", "Multi-store management"],
+    "cons": ["Theme limitations", "App ecosystem smaller than Shopify"],
+    "integrationNotes": "Open SaaS approach enables custom integrations and headless implementations",
+    "logoUrl": "/logos/bigcommerce.svg",
+    "website": "https://www.bigcommerce.com"
+  },
+  {
+    "id": "spryker",
+    "name": "Spryker",
+    "category": "commerce_engine", 
+    "description": "Composable commerce platform for sophisticated B2B and enterprise business models",
+    "machCompliant": true,
+    "offerings": ["B2B Commerce", "Marketplace", "API-first", "Microservices"],
+    "pros": ["B2B focused", "Highly customizable", "Microservices architecture", "Enterprise-grade"],
+    "cons": ["Complex implementation", "Requires technical expertise", "Higher development cost"],
+    "integrationNotes": "Excellent for complex B2B scenarios, true microservices approach",
+    "logoUrl": "/logos/spryker.svg",
+    "website": "https://spryker.com"
+  },
+  {
+    "id": "kibo",
+    "name": "Kibo Commerce",
+    "category": "commerce_engine",
+    "description": "Modern API-first, microservices-based ecommerce platform for omnichannel experiences",
+    "machCompliant": true,
+    "offerings": ["Omnichannel Commerce", "Order Management", "API-first", "Microservices"],
+    "pros": ["Strong omnichannel", "API-first design", "Quick implementation", "High ROI"],
+    "cons": ["Smaller ecosystem", "Less market presence"],
+    "integrationNotes": "Modern architecture designed for omnichannel without heavy custom development",
+    "logoUrl": "/logos/kibo.svg",
+    "website": "https://kibocommerce.com"
+  },
+  {
+    "id": "elastic-path",
+    "name": "Elastic Path",
+    "category": "commerce_engine",
+    "description": "Composable commerce platform for complex B2B and B2C scenarios",
+    "machCompliant": true,
+    "offerings": ["Commerce API", "Product Catalog", "Pricing Engine", "Promotions"],
+    "pros": ["Flexible architecture", "Strong B2B features", "Good API design"],
+    "cons": ["Smaller ecosystem", "Limited frontend tools"],
+    "integrationNotes": "Strong API-first design, good for complex commerce scenarios",
+    "logoUrl": "/logos/elastic-path.svg",
+    "website": "https://www.elasticpath.com"
+  },
+  {
+    "id": "vtex",
+    "name": "VTEX",
+    "category": "commerce_engine",
+    "description": "All-in-one commerce platform with marketplace capabilities",
+    "machCompliant": true,
+    "offerings": ["Commerce Platform", "Marketplace", "OMS", "CMS"],
+    "pros": ["Fast implementation", "Built-in marketplace", "Good for Latin America"],
+    "cons": ["Less flexible than pure headless", "Regional focus"],
+    "integrationNotes": "Good API coverage, some monolithic aspects but supports headless",
+    "logoUrl": "/logos/vtex.svg",
+    "website": "https://vtex.com"
+  },
+  {
+    "id": "vue-storefront",
+    "name": "Vue Storefront",
+    "category": "frontend_framework",
+    "description": "Headless PWA storefront framework for composable commerce",
+    "machCompliant": true,
+    "offerings": ["PWA Storefront", "Framework", "Integrations", "Mobile-first"],
+    "pros": ["Framework agnostic", "Fast development", "PWA capabilities", "Strong community"],
+    "cons": ["Requires frontend development skills", "Framework dependency"],
+    "integrationNotes": "Excellent for custom storefronts, integrates with multiple commerce backends",
+    "logoUrl": "/logos/vue-storefront.svg",
+    "website": "https://vuestorefront.io"
+  },
+  {
+    "id": "akeneo",
+    "name": "Akeneo",
+    "category": "pim",
+    "description": "Open-source Product Information Management system",
+    "machCompliant": true,
+    "offerings": ["Product Catalog", "Data Quality", "Asset Management", "Syndication"],
+    "pros": ["Open source option", "Strong data modeling", "Good API", "MACH certified"],
+    "cons": ["Complex setup", "UI could be better"],
+    "integrationNotes": "Excellent API for product data, integrates well with commerce platforms",
+    "logoUrl": "/logos/akeneo.svg",
+    "website": "https://www.akeneo.com"
+  },
+  {
+    "id": "inriver",
+    "name": "inRiver",
+    "category": "pim",
+    "description": "Scalable enterprise PIM with built-in analytics and flexible setup",
+    "machCompliant": true,
+    "offerings": ["Product Information Management", "Analytics", "Channel Syndication", "Data Quality"],
+    "pros": ["Highly scalable", "Built-in analytics", "Enterprise features", "MACH certified"],
+    "cons": ["Long implementation time", "Steep learning curve", "Higher cost"],
+    "integrationNotes": "Push product information to virtually any channel, strong API capabilities",
+    "logoUrl": "/logos/inriver.svg",
+    "website": "https://www.inriver.com"
+  },
+  {
+    "id": "pimcore",
+    "name": "Pimcore",
+    "category": "pim",
+    "description": "Open-source enterprise data and experience management platform",
+    "machCompliant": true,
+    "offerings": ["PIM/MDM", "DAM", "CMS", "CDP", "Digital Commerce"],
+    "pros": ["Open source", "Unified platform", "Highly customizable", "Built-in DAM & CMS"],
+    "cons": ["Complex setup", "Requires technical expertise"],
+    "integrationNotes": "API-driven architecture, seamless third-party integrations",
+    "logoUrl": "/logos/pimcore.svg",
+    "website": "https://pimcore.com"
+  },
+  {
+    "id": "plytix",
+    "name": "Plytix",
+    "category": "pim",
+    "description": "User-friendly PIM designed for SME collaboration with AI features",
+    "machCompliant": true,
+    "offerings": ["Product Information Management", "AI Content Generation", "Team Collaboration", "Multi-channel Sync"],
+    "pros": ["Easy to use", "Affordable", "AI integration", "Great support"],
+    "cons": ["Limited enterprise features", "Smaller feature set"],
+    "integrationNotes": "Simple API integration, built for SME rapid deployment",
+    "logoUrl": "/logos/plytix.svg",
+    "website": "https://www.plytix.com"
+  },
+  {
+    "id": "catsy",
+    "name": "Catsy",
+    "category": "pim",
+    "description": "PIM software for small-to-mid-sized manufacturers with automation features",
+    "machCompliant": true,
+    "offerings": ["Product Information Management", "Content Automation", "Analytics", "Multi-channel Distribution"],
+    "pros": ["Manufacturer focused", "Automation features", "Content enrichment"],
+    "cons": ["Limited to SMB market", "Niche focus"],
+    "integrationNotes": "Centralized content management with streamlined distribution capabilities",
+    "logoUrl": "/logos/catsy.svg",
+    "website": "https://www.catsy.com"
+  },
+  {
+    "id": "salsify",
+    "name": "Salsify",
+    "category": "pim",
+    "description": "Product Experience Management platform",
+    "machCompliant": true,
+    "offerings": ["PIM", "DAM", "Syndication", "Analytics"],
+    "pros": ["User-friendly", "Strong syndication", "Good analytics"],
+    "cons": ["Higher cost", "Less customizable"],
+    "integrationNotes": "Good API coverage, strong for product content management",
+    "logoUrl": "/logos/salsify.svg",
+    "website": "https://www.salsify.com",
+    "pricing": [
+      {
+        "name": "Startup",
+        "description": "For small teams getting started",
+        "monthlyPrice": 500,
+        "annualPrice": 5000,
+        "setup": 1000,
+        "features": ["Basic PIM", "Up to 1000 SKUs", "Standard support"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 20,
+            "description": "20% off first 3 months",
+            "conditions": ["New customers only"],
+            "expiresAt": "2024-12-31"
+          }
+        ],
+        "limits": {
+          "orders": 1000,
+          "users": 5
+        }
+      },
+      {
+        "name": "Growth",
+        "description": "For growing product catalogs",
+        "monthlyPrice": 1500,
+        "annualPrice": 15000,
+        "setup": 2500,
+        "features": ["Advanced PIM", "Up to 10k SKUs", "Syndication", "Analytics"],
+        "discounts": [
+          {
+            "type": "free_months",
+            "value": 1,
+            "description": "1 month free with annual plan",
+            "conditions": ["Annual payment"],
+            "minCommitment": "12 months"
+          },
+          {
+            "type": "fixed",
+            "value": 1000,
+            "description": "$1,000 off setup fees",
+            "conditions": ["Annual commitment"]
+          }
+        ],
+        "limits": {
+          "orders": 10000,
+          "users": 25
+        }
+      },
+      {
+        "name": "Enterprise",
+        "description": "For large scale operations",
+        "monthlyPrice": 3000,
+        "annualPrice": 30000,
+        "setup": 5000,
+        "features": ["Full PIM Suite", "Unlimited SKUs", "Premium support", "Custom integrations"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 15,
+            "description": "15% off for 24-month commitment",
+            "conditions": ["24-month commitment", "Annual payment"],
+            "minCommitment": "24 months"
+          },
+          {
+            "type": "fixed",
+            "value": 2500,
+            "description": "$2,500 off setup fees",
+            "conditions": ["Multi-year contract"]
+          }
+        ],
+        "limits": {
+          "orders": -1,
+          "users": -1
+        }
+      }
+    ],
+    "pricingModel": "fixed",
+    "pricingNotes": "Pricing scales with SKU count and features needed."
+  },
+  {
+    "id": "contentful",
+    "name": "Contentful",
+    "category": "cms",
+    "description": "Popular headless CMS with strong developer experience",
+    "machCompliant": true,
+    "offerings": ["Headless CMS", "CDN", "Image API", "GraphQL"],
+    "pros": ["Great DX", "Good documentation", "Strong ecosystem", "MACH Alliance member"],
+    "cons": ["Pricing model", "Limited workflow features"],
+    "integrationNotes": "Excellent API design, very developer-friendly",
+    "logoUrl": "/logos/contentful.svg",
+    "website": "https://www.contentful.com",
+    "pricing": [
+      {
+        "name": "Team",
+        "description": "For growing teams and projects",
+        "monthlyPrice": 489,
+        "annualPrice": 4890,
+        "setup": 0,
+        "features": ["10 users", "25 content types", "Basic workflows", "CDN"],
+        "discounts": [
+          {
+            "type": "free_months",
+            "value": 2,
+            "description": "2 months free with annual plan",
+            "conditions": ["Annual payment"]
+          }
+        ],
+        "limits": {
+          "users": 10,
+          "orders": 10000
+        }
+      },
+      {
+        "name": "Scale",
+        "description": "For scaling businesses",
+        "monthlyPrice": 879,
+        "annualPrice": 8790,
+        "setup": 500,
+        "features": ["25 users", "Unlimited content types", "Advanced workflows", "Premium CDN"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 15,
+            "description": "15% off first year",
+            "conditions": ["Annual payment", "New customers"]
+          }
+        ],
+        "limits": {
+          "users": 25,
+          "orders": 50000
+        }
+      }
+    ],
+    "pricingModel": "fixed",
+    "pricingNotes": "Pricing based on users and content delivery usage."
+  },
+  {
+    "id": "contentstack",
+    "name": "Contentstack",
+    "category": "cms",
+    "description": "API-first headless CMS for enterprise content management",
+    "machCompliant": true,
+    "offerings": ["Headless CMS", "Content Delivery", "Workflow", "Personalization"],
+    "pros": ["Strong API", "Good developer tools", "Scalable", "MACH Alliance founder"],
+    "cons": ["Learning curve", "Cost for high usage"],
+    "integrationNotes": "Pure headless, excellent for omnichannel content delivery",
+    "logoUrl": "/logos/contentstack.svg",
+    "website": "https://www.contentstack.com"
+  },
+  {
+    "id": "storyblok",
+    "name": "Storyblok",
+    "category": "cms",
+    "description": "Visual headless CMS with component-based approach",
+    "machCompliant": true,
+    "offerings": ["Visual Editor", "Component Library", "API", "Asset Management"],
+    "pros": ["Visual editing", "Component approach", "Good performance", "MACH Alliance member"],
+    "cons": ["Newer platform", "Smaller ecosystem"],
+    "integrationNotes": "Good API, visual editing appeals to content teams",
+    "logoUrl": "/logos/storyblok.svg",
+    "website": "https://www.storyblok.com"
+  },
+  {
+    "id": "sanity",
+    "name": "Sanity",
+    "category": "cms",
+    "description": "Unified content platform with real-time collaboration and flexible content modeling",
+    "machCompliant": true,
+    "offerings": ["Headless CMS", "Real-time Collaboration", "Content Lake", "Flexible Schemas"],
+    "pros": ["Real-time collaboration", "Flexible content modeling", "Developer-friendly", "Live preview"],
+    "cons": ["Higher enterprise pricing", "Learning curve"],
+    "integrationNotes": "Excellent for teams requiring real-time collaboration, flexible API",
+    "logoUrl": "/logos/sanity.svg",
+    "website": "https://www.sanity.io"
+  },
+  {
+    "id": "strapi",
+    "name": "Strapi",
+    "category": "cms", 
+    "description": "Leading open-source headless CMS with full customization capabilities",
+    "machCompliant": true,
+    "offerings": ["Open-source CMS", "Custom Content Types", "Plugin System", "API Generation"],
+    "pros": ["Open source", "Highly customizable", "Strong community", "TypeScript support"],
+    "cons": ["Self-hosted complexity", "Requires technical expertise"],
+    "integrationNotes": "100% JavaScript, fully customizable, developer-first approach",
+    "logoUrl": "/logos/strapi.svg",
+    "website": "https://strapi.io"
+  },
+  {
+    "id": "directus",
+    "name": "Directus",
+    "category": "cms",
+    "description": "Open-source headless CMS with powerful database toolkit and API generation",
+    "machCompliant": true,
+    "offerings": ["Database Toolkit", "Auto-generated APIs", "Admin Interface", "Asset Management"],
+    "pros": ["Database agnostic", "Auto-generated APIs", "Flexible architecture", "Open source"],
+    "cons": ["Complex for simple use cases", "Learning curve"],
+    "integrationNotes": "Excellent for custom databases, supports multiple database clients",
+    "logoUrl": "/logos/directus.svg",
+    "website": "https://directus.io"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "category": "cms",
+    "description": "Professional publishing platform with headless capabilities",
+    "machCompliant": true,
+    "offerings": ["Publishing Platform", "Membership", "Newsletter", "API"],
+    "pros": ["Publishing focused", "Built-in membership", "SEO optimized", "Fast"],
+    "cons": ["Limited customization", "Publishing-centric features only"],
+    "integrationNotes": "Great for content-heavy sites, strong API for headless implementations",
+    "logoUrl": "/logos/ghost.svg",
+    "website": "https://ghost.org"
+  },
+  {
+    "id": "payload",
+    "name": "Payload",
+    "category": "cms",
+    "description": "TypeScript-first headless CMS with admin UI and authentication built-in",
+    "machCompliant": true,
+    "offerings": ["TypeScript CMS", "Admin UI", "Authentication", "File Upload"],
+    "pros": ["TypeScript native", "Built-in admin", "Modern architecture", "Developer-friendly"],
+    "cons": ["Newer platform", "Smaller community"],
+    "integrationNotes": "Excellent for Next.js projects, modern development approach",
+    "logoUrl": "/logos/payload.svg",
+    "website": "https://payloadcms.com"
+  },
+  {
+    "id": "algolia",
+    "name": "Algolia",
+    "category": "search",
+    "description": "AI-powered search and discovery platform",
+    "machCompliant": true,
+    "offerings": ["Search API", "Analytics", "Personalization", "Recommendations"],
+    "pros": ["Fast performance", "Great relevance", "Easy integration", "MACH Alliance member"],
+    "cons": ["Cost at scale", "Limited customization"],
+    "integrationNotes": "Excellent API-first search, integrates with all major platforms",
+    "logoUrl": "/logos/algolia.svg",
+    "website": "https://www.algolia.com",
+    "pricing": [
+      {
+        "name": "Build",
+        "description": "For growing applications",
+        "monthlyPrice": 400,
+        "annualPrice": 4000,
+        "setup": 0,
+        "features": ["10k search requests", "Basic analytics", "Standard support"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 10,
+            "description": "10% off first 6 months",
+            "conditions": ["New customers only"],
+            "expiresAt": "2024-12-31"
+          }
+        ],
+        "limits": {
+          "orders": 5000,
+          "users": 15
+        }
+      },
+      {
+        "name": "Grow",
+        "description": "For scaling businesses",
+        "monthlyPrice": 800,
+        "annualPrice": 8000,
+        "setup": 250,
+        "features": ["50k search requests", "Advanced analytics", "Priority support"],
+        "discounts": [
+          {
+            "type": "free_months",
+            "value": 1,
+            "description": "1 month free with annual plan",
+            "conditions": ["Annual payment"]
+          }
+        ],
+        "limits": {
+          "orders": 25000,
+          "users": 50
+        }
+      }
+    ],
+    "pricingModel": "usage",
+    "pricingNotes": "Pricing scales with search requests and records."
+  },
+  {
+    "id": "constructor",
+    "name": "Constructor",
+    "category": "search",
+    "description": "AI-powered search and product discovery for ecommerce",
+    "machCompliant": true,
+    "offerings": ["Ecommerce Search", "Product Discovery", "AI Recommendations", "Analytics"],
+    "pros": ["Ecommerce focused", "AI-powered", "Revenue optimization", "MACH Alliance member"],
+    "cons": ["Ecommerce specific", "Higher cost"],
+    "integrationNotes": "Optimized for commerce conversion, strong API integration",
+    "logoUrl": "/logos/constructor.svg",
+    "website": "https://constructor.io"
+  },
+  {
+    "id": "elasticsearch",
+    "name": "Elasticsearch",
+    "category": "search",
+    "description": "Open-source search and analytics engine",
+    "machCompliant": true,
+    "offerings": ["Search Engine", "Analytics", "Logging", "Monitoring"],
+    "pros": ["Open source", "Very flexible", "Powerful"],
+    "cons": ["Complex setup", "Resource intensive", "Requires expertise"],
+    "integrationNotes": "Highly customizable, requires more development effort",
+    "logoUrl": "/logos/elasticsearch.svg",
+    "website": "https://www.elastic.co"
+  },
+  {
+    "id": "adyen",
+    "name": "Adyen",
+    "category": "payment",
+    "description": "Global payment platform for omnichannel commerce",
+    "machCompliant": true,
+    "offerings": ["Payment Processing", "Risk Management", "Reporting", "Marketplace"],
+    "pros": ["Global reach", "Single integration", "Good reporting"],
+    "cons": ["Complex pricing", "Setup complexity"],
+    "integrationNotes": "Comprehensive payment API, handles global complexity",
+    "logoUrl": "/logos/adyen.svg",
+    "website": "https://www.adyen.com"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "category": "payment",
+    "description": "Developer-friendly payment platform",
+    "machCompliant": true,
+    "offerings": ["Payment Processing", "Subscriptions", "Marketplace", "Terminal"],
+    "pros": ["Developer-friendly", "Great documentation", "Easy integration"],
+    "cons": ["US-focused", "Limited global coverage"],
+    "integrationNotes": "Excellent API design, very developer-friendly",
+    "logoUrl": "/logos/stripe.svg",
+    "website": "https://stripe.com",
+    "pricing": [
+      {
+        "name": "Standard",
+        "description": "Pay-as-you-go pricing",
+        "monthlyPrice": 0,
+        "annualPrice": 0,
+        "setup": 0,
+        "transactionFee": 2.9,
+        "features": ["Payment processing", "Dashboard", "Basic fraud protection"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 5,
+            "description": "Reduced rates for high volume",
+            "conditions": ["$100k+ monthly volume"]
+          }
+        ],
+        "limits": {
+          "orders": -1,
+          "users": -1
+        }
+      }
+    ],
+    "pricingModel": "usage",
+    "pricingNotes": "2.9% + 30¢ per transaction. Volume discounts available."
+  },
+  {
+    "id": "mollie",
+    "name": "Mollie",
+    "category": "payment",
+    "description": "European payment service provider with simple API",
+    "machCompliant": true,
+    "offerings": ["Payment Processing", "Subscriptions", "Marketplace", "Mobile Payments"],
+    "pros": ["Europe focused", "Simple integration", "Good local payment methods"],
+    "cons": ["Limited global reach", "Smaller feature set"],
+    "integrationNotes": "Clean API design, strong for European markets",
+    "logoUrl": "/logos/mollie.svg",
+    "website": "https://www.mollie.com"
+  },
+  {
+    "id": "klarna",
+    "name": "Klarna",
+    "category": "payment",
+    "description": "Buy now, pay later and payment solutions",
+    "machCompliant": true,
+    "offerings": ["BNPL", "Payment Processing", "Shopping App", "Merchant Solutions"],
+    "pros": ["Popular BNPL option", "Consumer app", "Good conversion rates"],
+    "cons": ["Limited to BNPL focus", "Geographic restrictions"],
+    "integrationNotes": "Strong API for BNPL integration, good for conversion optimization",
+    "logoUrl": "/logos/klarna.svg",
+    "website": "https://www.klarna.com"
+  },
+  {
+    "id": "segment",
+    "name": "Segment",
+    "category": "analytics",
+    "description": "Customer data platform for unified analytics",
+    "machCompliant": true,
+    "offerings": ["Data Collection", "Integrations", "Audiences", "Protocols"],
+    "pros": ["Unified data", "Many integrations", "Good documentation", "MACH Alliance member"],
+    "cons": ["Cost", "Data delays", "Complexity"],
+    "integrationNotes": "Central hub for customer data, integrates with everything",
+    "logoUrl": "/logos/segment.svg",
+    "website": "https://segment.com",
+    "pricing": [
+      {
+        "name": "Team",
+        "description": "For teams getting started",
+        "monthlyPrice": 120,
+        "annualPrice": 1200,
+        "setup": 0,
+        "features": ["10k MTU", "Core sources & destinations", "Basic support"],
+        "discounts": [
+          {
+            "type": "free_months",
+            "value": 2,
+            "description": "2 months free with annual plan",
+            "conditions": ["Annual payment"]
+          }
+        ],
+        "limits": {
+          "orders": 5000,
+          "users": 10
+        }
+      },
+      {
+        "name": "Business",
+        "description": "For growing companies",
+        "monthlyPrice": 350,
+        "annualPrice": 3500,
+        "setup": 500,
+        "features": ["25k MTU", "Premium destinations", "Priority support", "Audiences"],
+        "discounts": [
+          {
+            "type": "percentage",
+            "value": 20,
+            "description": "20% off first year",
+            "conditions": ["Annual payment", "New customers"]
+          }
+        ],
+        "limits": {
+          "orders": 25000,
+          "users": 25
+        }
+      }
+    ],
+    "pricingModel": "usage",
+    "pricingNotes": "Pricing based on Monthly Tracked Users (MTU)."
+  },
+  {
+    "id": "amplitude",
+    "name": "Amplitude",
+    "category": "analytics",
+    "description": "Product analytics platform for user behavior",
+    "machCompliant": true,
+    "offerings": ["Product Analytics", "Cohort Analysis", "Funnels", "Retention"],
+    "pros": ["User-friendly", "Good visualizations", "Strong product focus"],
+    "cons": ["Limited custom events", "Cost"],
+    "integrationNotes": "Good API for product analytics, focuses on user behavior",
+    "logoUrl": "/logos/amplitude.svg",
+    "website": "https://amplitude.com"
+  },
+  {
+    "id": "mixpanel",
+    "name": "Mixpanel",
+    "category": "analytics",
+    "description": "Event tracking and product analytics platform",
+    "machCompliant": true,
+    "offerings": ["Event Tracking", "Funnel Analysis", "A/B Testing", "User Profiles"],
+    "pros": ["Detailed event tracking", "Real-time data", "User-friendly interface"],
+    "cons": ["Can get expensive", "Complex for simple needs"],
+    "integrationNotes": "Excellent for detailed user behavior tracking, strong API",
+    "logoUrl": "/logos/mixpanel.svg",
+    "website": "https://mixpanel.com"
+  },
+  {
+    "id": "talon-one",
+    "name": "Talon.One",
+    "category": "loyalty",
+    "description": "Promotion and loyalty management platform",
+    "machCompliant": true,
+    "offerings": ["Promotions", "Loyalty Programs", "Coupons", "Referrals"],
+    "pros": ["Flexible rules engine", "Real-time processing", "Good API"],
+    "cons": ["Complex setup", "Learning curve"],
+    "integrationNotes": "API-first design, good for complex promotion scenarios",
+    "logoUrl": "/logos/talon-one.svg",
+    "website": "https://www.talon.one"
+  },
+  {
+    "id": "yotpo",
+    "name": "Yotpo",
+    "category": "loyalty",
+    "description": "Comprehensive loyalty and reviews platform",
+    "machCompliant": true,
+    "offerings": ["Loyalty Programs", "Reviews & Ratings", "Referrals", "Email Marketing"],
+    "pros": ["All-in-one platform", "Strong review features", "Easy integration"],
+    "cons": ["Can be expensive", "Feature overlap"],
+    "integrationNotes": "Comprehensive API for loyalty and UGC integration",
+    "logoUrl": "/logos/yotpo.svg",
+    "website": "https://www.yotpo.com"
+  },
+  {
+    "id": "dynamic-yield",
+    "name": "Dynamic Yield",
+    "category": "personalization",
+    "description": "AI-powered personalization and optimization platform",
+    "machCompliant": true,
+    "offerings": ["Personalization", "A/B Testing", "Recommendations", "Email"],
+    "pros": ["AI-powered", "Omnichannel", "Strong features"],
+    "cons": ["Complex", "High cost", "Setup time"],
+    "integrationNotes": "API-first personalization, works across all touchpoints",
+    "logoUrl": "/logos/dynamic-yield.svg",
+    "website": "https://www.dynamicyield.com"
+  },
+  {
+    "id": "bloomreach",
+    "name": "Bloomreach",
+    "category": "personalization",
+    "description": "AI-driven product discovery and personalization platform",
+    "machCompliant": true,
+    "offerings": ["Product Discovery", "Personalization", "Content Management", "SEO"],
+    "pros": ["AI-driven", "Comprehensive platform", "Strong search", "MACH Alliance member"],
+    "cons": ["Complex implementation", "Higher cost"],
+    "integrationNotes": "Strong API for search, personalization, and content management",
+    "logoUrl": "/logos/bloomreach.svg",
+    "website": "https://www.bloomreach.com"
+  },
+  {
+    "id": "newstore",
+    "name": "NewStore",
+    "category": "omnichannel",
+    "description": "Omnichannel platform for retail operations",
+    "machCompliant": true,
+    "offerings": ["OMS", "POS", "Mobile Apps", "Inventory"],
+    "pros": ["Mobile-first", "Omnichannel focus", "Good for retail"],
+    "cons": ["Retail-specific", "Limited B2B features"],
+    "integrationNotes": "Strong for retail omnichannel, good API coverage",
+    "logoUrl": "/logos/newstore.svg",
+    "website": "https://www.newstore.com"
+  },
+  {
+    "id": "fluent-commerce",
+    "name": "Fluent Commerce",
+    "category": "omnichannel",
+    "description": "Order management and inventory platform for omnichannel retail",
+    "machCompliant": true,
+    "offerings": ["Order Management", "Inventory Orchestration", "Ship from Store", "API Platform"],
+    "pros": ["Strong OMS", "Inventory optimization", "Omnichannel focus", "MACH Alliance member"],
+    "cons": ["Complex implementation", "Retail focused"],
+    "integrationNotes": "Microservices-based architecture, strong API for order and inventory management",
+    "logoUrl": "/logos/fluent-commerce.svg",
+    "website": "https://fluentcommerce.com"
+  },
+  {
+    "id": "tulip-retail",
+    "name": "Tulip Retail",
+    "category": "omnichannel",
+    "description": "Clienteling and mobile POS platform",
+    "machCompliant": true,
+    "offerings": ["Clienteling", "Mobile POS", "Analytics", "Appointments"],
+    "pros": ["Store associate focus", "Good mobile experience", "Clienteling features"],
+    "cons": ["Niche focus", "Limited e-commerce features"],
+    "integrationNotes": "Good for store operations, integrates with commerce platforms",
+    "logoUrl": "/logos/tulip-retail.svg",
+    "website": "https://tulip.com"
+  },
+  {
+    "id": "avalara",
+    "name": "Avalara",
+    "category": "tax",
+    "description": "Automated tax compliance and calculation",
+    "machCompliant": true,
+    "offerings": ["Tax Calculation", "Compliance", "Filing", "Reporting"],
+    "pros": ["Comprehensive tax rules", "Automated compliance", "Good API"],
+    "cons": ["Complex setup", "Cost"],
+    "integrationNotes": "Essential for tax compliance, integrates with all major platforms",
+    "logoUrl": "/logos/avalara.svg",
+    "website": "https://www.avalara.com"
+  },
+  {
+    "id": "taxjar",
+    "name": "TaxJar",
+    "category": "tax",
+    "description": "Sales tax automation for ecommerce businesses",
+    "machCompliant": true,
+    "offerings": ["Sales Tax Calculation", "Filing", "Reporting", "API"],
+    "pros": ["Ecommerce focused", "Easy setup", "Good API", "Affordable"],
+    "cons": ["Limited to sales tax", "US focused"],
+    "integrationNotes": "Simple API integration, designed specifically for ecommerce",
+    "logoUrl": "/logos/taxjar.svg",
+    "website": "https://www.taxjar.com"
+  },
+  {
+    "id": "sap",
+    "name": "SAP",
+    "category": "erp",
+    "description": "Enterprise resource planning platform",
+    "machCompliant": false,
+    "offerings": ["ERP", "Finance", "HR", "Supply Chain"],
+    "pros": ["Comprehensive", "Enterprise-grade", "Industry-specific"],
+    "cons": ["Monolithic", "Complex", "Expensive", "Not cloud-native"],
+    "integrationNotes": "Traditional ERP, can integrate via APIs but not truly MACH-compliant",
+    "logoUrl": "/logos/sap.svg",
+    "website": "https://www.sap.com"
+  },
+  {
+    "id": "netsuite",
+    "name": "NetSuite",
+    "category": "erp",
+    "description": "Cloud-based business management suite",
+    "machCompliant": false,
+    "offerings": ["ERP", "CRM", "E-commerce", "Professional Services"],
+    "pros": ["Cloud-based", "Integrated suite", "Good for growing businesses"],
+    "cons": ["Monolithic architecture", "Limited API flexibility"],
+    "integrationNotes": "Cloud-based but still monolithic, limited MACH compliance",
+    "logoUrl": "/logos/netsuite.svg",
+    "website": "https://www.netsuite.com"
+  }
+]
